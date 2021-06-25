@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //object 오브젝트안에서는 :사용
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: "40",
+            tel: "010-0000-0000",
+            email: "sdfsf@mail.com"
+        };
+
+        console.log(person);
+
+        // console.log(person.firstName);
+        // console.log(person.age);
+
+        // person.age = 41;
+        // console.log(person.age);
+
+
+        console.log(person["lastName"]);
+
+
+
+        let firstNameKey = "firstName";
+        // console.log(person.firstNameKey)=>>>이건 안됨...;
+        console.log(person[firstNameKey]);
+    </script>
+
+
+</body>
+
+</html>

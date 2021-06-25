@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //스트링객체
+        //toUpperCase()
+        var txt = "Hello World"
+        console.log(txt.toUpperCase());
+
+        //toLowerCase()
+        console.log(txt.toLowerCase());
+
+        //concat(); - 문자열더해줌
+        var text1 = "Hello";
+        var text2 = "World";
+        console.log(text1.concat(" ", text2, "~!"))
+
+        //trim()
+        var text = "      hello World"
+        console.log(text);
+        console.log(text.trim());
+
+
+        //padStrart(); 첫번째- 문자열의 총길이, 두번째 - 뭘로 채울래
+        var txt = "5";
+        console.log(txt.padStart(4, 0));
+
+
+
+
+        //문자열, 총자리수(길이), 뭘로채울지?
+        //함수이름-fillChar
+        //padStart와 같게 만들기.
+
+        function fillChar(str, len, s) {
+            while (str.length < len) {
+                str = s + str;
+            }
+            return str;
+        }
+        console.log(fillChar("9", 4, 0));
+
+
+        //padEnd
+        var txt = "5";
+        console.log(txt.padEnd(4, 0))
+    </script>
+
+</body>
+
+
+
+</html>

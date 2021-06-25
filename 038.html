@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //map()
+        var out = userList.map(function (user) {
+            return {
+                "firstName": user.firstName,
+                "lastName": user.lastName,
+                "email": user.email,
+                "fullName": user.firstName + user.lastName
+            }
+        });
+        console.table(out);
+
+
+
+
+        //reduce()
+        var total = points.reduce(function (sum, currentValue, curruntIndex, arr) {
+            return sum + curruntValue;
+        });
+        console.log("total", total);
+    </script>
+</body>
+
+</html>

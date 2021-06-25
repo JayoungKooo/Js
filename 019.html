@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // // if(조건식) {
+        //     코드선언
+        // }
+
+        var age = 19;
+        var isAdult = false;
+
+        if (age >= 20) {
+            isAdult = true
+        }
+
+        if (isAdult) {
+            //코드 if 충족하면 else는 건너뛰고 실행
+        } else { //isAdult 코드가 false 이면 무조건 else블록 실행
+        }
+
+        //이 위치로
+
+        var age = 7;
+        var isFree = false;
+
+        if (age >= 70) {
+            isFree = true;
+        } else if (age < 8) {
+            isFree = true;
+        } else {
+            isFree = false;
+        }
+
+
+        var time = 13;
+        var greeting
+
+        if (time <= 10) {
+            greeting = "morning";
+        } else if (time <= 16) {
+            greeting = "afternoon"
+        } else if (time <= 20) {
+            greeting = "night";
+        }
+
+        console.log(greeting);
+    </script>
+</body>
+
+</html>

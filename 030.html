@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var txt = "asdfghjzxcvmsdfsghth";
+        console.log(txt.length);
+
+        var txt = "Please locate where locate occur!"
+        console.log(txt.indexOf("sjdhf")); //>>존재하지 않아서 -1로 나온다.
+        console.log(txt.lastIndexOf("locate"));
+
+        var tel = "010-0303-3523";
+        if (tel.indexOf("-") > -1) {
+            console.log("-쓰지마세요");
+        }
+
+
+        //slice함수- 두개의 파라미터, 첫번째- 시작인덱스번호, 두번째- 종료인덱스번호
+        //그사이에 문자 떼어 오는 기능
+        var text = "apple,banana,orange,melon";
+        console.log(text.slice(7, 13))
+        console.log(text.slice(7));
+        console.log(text.slice(-12)); //>>-값은 뒤에서부터 센다.
+
+        var txt = "9709092"
+        console.log(txt.slice(-1))
+        //>가장일반적인예..ㅋ
+
+
+
+        //substring == slice
+        console.log(text.substring(7, 13))
+        console.log(text.substring(7));
+
+
+
+        //substr = 첫번째 파라미터 - 시작인덱스 .  두번째 파라미터 - 잘라낼 길이
+        //20210624
+        var date = "20210624";
+
+        var year = date.slice(0, 4);
+        var year2 = date.substring(0, 4);
+        var year3 = date.substr(0, 4);
+
+        var month1 = date.slice(4, 6)
+        var month2 = date.substring(4, 6)
+        var month3 = date.substr(4, 2)
+
+        var day = date.slice(-2);
+        var day2 = date.substring(6);
+        var day3 = date.substr(6, 2);
+
+
+
+        var date = "2132156021.1454620.54665624";
+        date.substring(0, date.indexOf("."));
+
+
+
+        var date = "2021.10.24"; //2021-10-24되고싶어.
+        var year = date.substr(0, 4);
+        var month = date.substr(5, 2);
+        var day = date.slice(-2);
+        console.log(year + "-" + month + "-" + day);
+
+
+        //REPLACE
+        console.log(date.replace(".", "-"));
+        //근데 처음.하나만 바뀜..ㅋㅋ
+
+
+        //replace 함수
+        console.log(date.replace(/\./g, "-")); //g=global 전부다 찾으라는 뜻
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="user_data.js"></script>
+    <script>
+        //문제1 userlist 데이터에서 gender가 male인사람만 새 배열 maleUserList에 담고 console창에 출력하세요.
+
+        // var maleUserList = [];
+        // for (var user of userList) {
+        //     if (user.gender == "male") {
+        //         maleUserList.push(user);
+        //     }
+        // }
+
+        var maleUserList = [];
+        for (var user of userList) {
+            if (user["gender"] == "male") {
+                maleUserList.push(user);
+            }
+        }
+        console.table(maleUserList);
+    </script>
+</body>
+
+</html>

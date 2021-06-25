@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //배열안에 배열
+        //함수명 - printArray
+        //파라미터 배열
+        //for문 안에 for문쓰기
+        //출력 - console.log
+
+        var arr = [
+            [1, 2, 3, 4, 5],
+            [3, 12, 33, 24, 15],
+            [4, 7, 12, 3, 9],
+            [12, 32, 56, 23, 90],
+            [5, 9, 7, 21, 19],
+            [5, 9, 7, 21, 19]
+        ]
+
+        function printArray(arr2d) {
+            let len1 = arr2d.length; //6
+
+            for (let i = 0; i < len1; i++) { //
+
+                let arr1 = arr2d[i];
+                let len2 = arr1.length;
+
+                for (let j = 0; j < len2; j++) {
+                    console.log(arr1[j]);
+                }
+            }
+        }
+        printArray(arr);
+    </script>
+</body>
+
+</html>

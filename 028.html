@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //계산기 만들기. 숫자2개에대한 더하기/빼기/곱하기/나누기를 수행하는 함수
+        //파라미터로 숫자 2개와 operator인 +-*/ 를 입력받고 계산 수행
+        //함수명 calculator
+        //파라미터명 n1, n2, operator
+        //return 계산된값
+
+        function calculator(n1, n2, operator) {
+            var y;
+            if (operator == "+") {
+                return n1 + n2;
+            } else if (operator == "-") {
+                return n1 - n2;
+            } else if (operator == "*") {
+                return n1 * n2;
+            } else if (operator == "/") {
+                return n1 / n2;
+            }
+        }
+
+        console.log(calculator(1, 2, "+"))
+
+
+        //비추코드
+        function calculator2(n1, n2, operator) {
+            return eval(n1 + operator + n2);
+        } //문자열로 인식한다.?입력값에 누가 코드 넣으면 바로 실행돼서 위험함.
+
+        console.log(calculator(4, 5, "*"));
+    </script>
+</body>
+
+</html>

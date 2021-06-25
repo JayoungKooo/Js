@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //조건문 switch
+        var d = new Date();
+        var day = d.getDay();
+        console.log("day", day);
+        var dayName = "";
+
+        var dayNames = ["월", "화", "수", "목", "금", "토", "일"]
+        console.log(dayNames[day])
+
+
+        //break 필수!!!
+
+        switch (day) {
+            case 0:
+                dayName = "일요일";
+                break;
+            case 1:
+                dayName = "월요일";
+                break;
+            case 2:
+                dayName = "화요일";
+                break;
+            case 3:
+                dayName = "수요일";
+                break;
+            case 4:
+                dayName = "목요일";
+                break;
+            case 5:
+                dayName = "금요일";
+                break;
+            case 6:
+                dayName = "토요일";
+                break;
+
+            default:
+                break;
+        }
+
+        console.log("dayName", dayName)
+    </script>
+</body>
+
+</html>

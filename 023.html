@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //문제2. productList에서 inputCoin으로 구매할수있는음료목록출력
+
+        var productList = [{
+                name: "솔의눈",
+                price: 700
+            },
+            {
+                name: "커피",
+                price: 700
+            },
+            {
+                name: "파워에이드",
+                price: 1200
+            },
+            {
+                name: "오렌지",
+                price: 1000
+            },
+            {
+                name: "보리차",
+                price: 1200
+            },
+            {
+                name: "밀키스",
+                price: 800
+            },
+
+        ]
+
+        var inputCoin = 700;
+        var drinkList = [];
+        for (var drink of productList) {
+            if (drink.price <= inputCoin) {
+                drinkList.push(drink.name);
+            }
+        }
+
+        console.log(drinkList);
+    </script>
+</body>
+
+</html>

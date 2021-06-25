@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script src="user_data.js"></script>
+
+    <script>
+        //나이순 정렬//
+
+        // var p = userList.sort(function (a, b) {
+        //     return a.age - b.age;
+        // });
+
+        // console.table(p);
+
+        var output = userList.filter(function (user) {
+            return user.gender == "female" && user.age >= 30;
+        });
+        console.table(output);
+    </script>
+</body>
+
+</html>

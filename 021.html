@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //반복문 for-loop
+        var brands = ["애플", "구글", "페이스북", "아마존", "삼성"]
+
+        for (var index in brands) {
+            console.log(brands[index]);
+        } //for-in구문
+
+
+        console.log(brands[0]);
+        console.log(brands[1]);
+        console.log(brands[2]);
+        console.log(brands[3]);
+        console.log(brands[4]);
+
+        // for -loop
+        // for (코드1; 조건2; 코드2) {
+        //     //코드블록
+        // }
+
+        brands.push("엘지")
+        var length = brands.length
+        for (var i = 0; i < length; i++) {
+            console.log(brands[i]);
+        } //결과:애플,구글,페이스북,아마존,삼성,엘지//// 첫번째 코드는 무조건 실행된 후 조건2로 넘어간다.
+
+
+
+        //for-in
+        let person = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 40,
+            tel: "010-0000-0000",
+            email: "sdfsf@mail.com"
+        };
+
+        //index,key는 그냥 내가 만드는거?
+
+        for (var key in person) //person이라는 object안에 잇는 모든 key들을 다 읽어라
+        {
+            // console.log(key);
+            console.log(key, person[key]);
+        }
+
+
+
+        //for-of
+        for (var brand of brands) {
+            console.log(brand);
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //문제3. 음료자판기 문제를 함수로, 사용자가 넣은 돈은 파라미터로 받고 구매할 수 잇는 음료 리스트 변환하기
+
+
+        var productList = [{
+                name: "솔의눈",
+                price: 700
+            },
+            {
+                name: "커피",
+                price: 700
+            },
+            {
+                name: "파워에이드",
+                price: 1200
+            },
+            {
+                name: "오렌지",
+                price: 1000
+            },
+            {
+                name: "보리차",
+                price: 1200
+            },
+            {
+                name: "밀키스",
+                price: 800
+            },
+
+        ]
+
+        //함수를 선언. 함수이름은 getProductList 파라미터는 inputCoin. 
+        //inputCoin으로 구매할 수 있는 음료목록을 productlist 배열에서 추출해서 
+        //새로운 배열로 만들어성 return해주기. 받는 쪽에서는 var, let outputList =
+        //concole.table(outputList)
+
+        // var kk = 10;
+        //var hh = 20;
+
+
+        //var getProductList = function (inputCoin) <<이것도 가능..변수명이 함수와 같은 역할??
+        function start(inputCoin) {
+            let drinkList = [];
+            for (var drink of productList) {
+                if (drink.price <= inputCoin) {
+                    drinkList.push(drink.name);
+                }
+            }
+
+            console.table(drinkList);
+        }
+        start(1000);
+    </script>
+</body>
+
+</html>

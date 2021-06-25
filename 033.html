@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Document</title>
+</head>
+
+<body>
+    <script src="user_data.js"></script>
+
+    <script>
+        //나이의 총합 getUserAgeSum
+        //나이평균 getUserAgeAvg
+        //가장나이많은사람getUserAgeMax
+        //가장나이적은사람getUserAgeMin
+
+        function getUserAgeMath() {
+            let sum = 0;
+            let maxAge = 0;
+            let minAge = Number.MAX_SAFE_INTEGER;
+
+            for (var user of userList) {
+                sum = sum + user.age;
+
+                if (user.age > maxAge) {
+                    maxAge = user.age;
+                }
+
+                if (user.age < minAge) {
+                    minAge = user.age;
+                }
+            }
+
+            let avg = sum / userList.length;
+
+            return {
+                sum: sum, //키가 없으면 변수명과 같다고 여김,,그래서 안써도돼
+                avg: avg,
+                maxAge: maxAge,
+                minAge: minAge
+            }
+        }
+        let userMath = getUserAgeMath();
+        console.table(userMath)
+    </script>
+</body>
+
+</html>
