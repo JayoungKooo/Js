@@ -24,13 +24,13 @@
         function printArray(arr2d) {
             let len1 = arr2d.length; //6
 
-            for (let i = 0; i < len1; i++) { //
+            for (let i = 0; i < len1; i++) { //0~5까지 1씩 더해가면서 반복
 
                 let arr1 = arr2d[i];
-                let len2 = arr1.length;
+                let len2 = arr1.length; //항상 5개 아닌가?
 
-                for (let j = 0; j < len2; j++) {
-                    console.log(arr1[j]);
+                for (let j = 0; j < len2; j++) { //0~4까지 반복?
+                    console.log(arr1[j]); //i는 몇번째 줄인지 j는 거기서 몇번째인지...
                 }
             }
         }

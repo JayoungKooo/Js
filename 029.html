@@ -5,26 +5,61 @@
 </head>
 
 <body>
+
     <script>
         // var person = {
         //     firstName: "John",
-        //     lastName: "Doe",
+        //     lastName: "Doe"
         //     getFullName: function () {
         //         return this.firstName + "" + this.lastName;
         //     }
         // };
 
-        var person = {};
-        var person = new Object();
+        var person = {
+            firstName: "John",
+            lastName: "Doe",
+            getFullName: function () {
+                return this.firstName + "" + this.lastName;
+            }
+        };
+
+
+
+        person.getFullName();
+
+        //person.firstName + person.lastName
+
+
+
+        // var person = new Object();
+        person.firstName = "John";
+        person.lastName = "Doe";
+        person.getFullName = function () {
+            return this.firstName + " " + this.lastName;
+        }
         ///????????놓침..
 
-        person.firstName = ""
+        // person.firstName = ""
 
-        person.getFullName = function () {
-            return this.firstName + "" + this.lastName;
-        }
+        // person.getFullName = function () {
+        //     return this.firstName + "" + this.lastName;
+        // }
 
         console.log(person.getFullName())
+
+        //함수 선언식
+        function getFullName() {
+
+        }
+
+        getFullName();
+
+        //함수 표현식
+        var getFullName = function () {
+
+        }
+
+        getFullName();
     </script>
 </body>
 
